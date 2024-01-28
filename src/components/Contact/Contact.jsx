@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 export const Contact = ({ id, name, number, onDelete}) => {
   return (
     <li className={styles.contactItem}>
-      <div className={styles.contactInfo} id={`contact-${id}`}>
+      <div className={styles.contactInfo} id={id}>
         <div className={styles.contactRow}>
           <FaUserAlt className={styles.contactIcon} />
           <p>{name}</p>
