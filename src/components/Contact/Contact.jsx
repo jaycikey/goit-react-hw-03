@@ -3,7 +3,7 @@ import { MdPhone } from "react-icons/md";
 import { Button } from "../Button/Button";
 import styles from "./Contact.module.css";
 
-export const Contact = ({ id, name, number, onDelete}) => {
+export const Contact = ({ id, name, number, onDelete }) => {
   return (
     <li className={styles.contactItem}>
       <div className={styles.contactInfo} id={id}>
@@ -16,7 +16,9 @@ export const Contact = ({ id, name, number, onDelete}) => {
           <p>{number}</p>
         </div>
       </div>
-      <Button className="button" onClick={onDelete} id={id}>Delete</Button>
+      <Button onClick={onDelete} id={id}>
+        Delete
+      </Button>
     </li>
   );
 };
