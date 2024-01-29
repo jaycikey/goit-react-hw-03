@@ -16,7 +16,7 @@ export const Contact = ({ id, name, number, onDelete }) => {
           <p>{number}</p>
         </div>
       </div>
-      <Button onClick={onDelete} id={id}>
+      <Button type={"button"} onClick={onDelete} id={id}>
         Delete
       </Button>
     </li>
